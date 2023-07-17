@@ -8,3 +8,5 @@ def buildImage(imagename, imageversion) {
             """
     }
 }
+
+return this
