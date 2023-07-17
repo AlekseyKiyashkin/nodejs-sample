@@ -18,7 +18,6 @@ pipeline {
             }
         }
 
-
         stage('build') {
             steps {
                 sh '''
@@ -29,7 +28,8 @@ pipeline {
         
         stage("build image") {
             steps {
-                script {gv.buildImage (node, 2)
+                script {
+                    gv.buildImage (node, 2)
                 }
             }
         }
