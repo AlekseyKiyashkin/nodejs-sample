@@ -29,7 +29,7 @@ pipeline {
         stage("build image") {
             steps {
                 script {
-                    gv.buildImage ('nodesampleapp', '2')
+                    gv.buildImage (nodesampleapp, 2)
                 }
             }
         }
